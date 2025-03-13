@@ -46,7 +46,6 @@ def solve(c, s, d):
             model.addConstr(x[i][j] >= 0, name=f"NonNeg_{i}_{j}")
 
     model.optimize()
-
     
     if model.status == GRB.OPTIMAL:
         # 得到结果
