@@ -50,7 +50,7 @@ end
 首先，新建虚拟环境：
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 然后，激活虚拟环境。在 Windows 下，使用如下命令：
@@ -74,7 +74,7 @@ pip install -r requirements.txt
 最后，指定输入文件与输出文件后，运行程序：
 
 ```bash
-python main.py -i <input-file>
+python3 main.py -i <input-file>
 ```
 
 ## 输入格式与输出格式
