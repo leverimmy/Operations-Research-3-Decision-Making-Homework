@@ -1,3 +1,3 @@
-gurobipy
-pandas
-openpyxl
+gurobipy==12.0.1
+pandas==2.2.3
+openpyxl==3.1.5
