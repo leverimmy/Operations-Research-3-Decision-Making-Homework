@@ -218,7 +218,7 @@ Evaluation of DEP:      355159.95370370365
 
 ### (7)
 
-Higle(2005) 的式 (15) 如下：
+Higle (2005) 的式 (15) 如下：
 
 $$
 \begin{align*}
