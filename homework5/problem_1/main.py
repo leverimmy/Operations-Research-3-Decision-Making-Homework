@@ -89,7 +89,7 @@ def solve_task_i(i):
 
 def evaluate(x):
     result = 0
-    for i in range(len(OMEGA)):
+    for k in range(len(OMEGA)):
         # Model
         model = Model("Evaluation Model")
 
@@ -100,12 +100,12 @@ def evaluate(x):
                            + quicksum((y[i] * PRICE[i]) for i in range(len(y))), GRB.MAXIMIZE)
         # 约束条件
         for j in range(len(y)):
-            model.addConstr(y[j] <= OMEGA[i][0][j])
+            model.addConstr(y[j] <= OMEGA[k][0][j])
         for j in range(len(x)):
             model.addConstr(-x[j] + quicksum(M[j][k] * y[k] for k in range(len(y))) <= 0)
         
         model.optimize()
-        current_result = model.objVal * OMEGA[i][1]
+        current_result = model.objVal * OMEGA[k][1]
         result += current_result
     
     return result
