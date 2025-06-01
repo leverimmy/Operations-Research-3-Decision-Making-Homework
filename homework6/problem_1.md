@@ -1,7 +1,5 @@
 # Problem 1
 
-## TS-SP Model
-
 The TS-SP model of CEP1 is as follows:
 
 $$
